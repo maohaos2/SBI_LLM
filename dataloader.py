@@ -6,7 +6,7 @@ from transformers import RobertaTokenizer
 
 
 
-cache_path = '/dccstor/mitibm_uq/.cache/huggingface/datasets'
+cache_path = '/.cache/huggingface/datasets'
 
 def convert_to_features(example_batch, tokenizer):
     input_encodings = tokenizer.batch_encode_plus(example_batch['input_text'])
